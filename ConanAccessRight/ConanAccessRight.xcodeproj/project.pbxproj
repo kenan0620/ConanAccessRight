@@ -1,0 +1,547 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27B5E1D41E543DE100DD6531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D31E543DE100DD6531 /* main.m */; };
+		27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D61E543DE100DD6531 /* AppDelegate.m */; };
+		27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D91E543DE100DD6531 /* ViewController.m */; };
+		27B5E1DD1E543DE100DD6531 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B5E1DB1E543DE100DD6531 /* Main.storyboard */; };
+		27B5E1DF1E543DE100DD6531 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27B5E1DE1E543DE100DD6531 /* Assets.xcassets */; };
+		27B5E1E21E543DE100DD6531 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27B5E1E01E543DE100DD6531 /* LaunchScreen.storyboard */; };
+		27B5E1ED1E543DE100DD6531 /* ConanAccessRightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1EC1E543DE100DD6531 /* ConanAccessRightTests.m */; };
+		27B5E1F81E543DE200DD6531 /* ConanAccessRightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1F71E543DE200DD6531 /* ConanAccessRightUITests.m */; };
+		27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E2061E543DED00DD6531 /* ConanAccessRight.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27B5E1E91E543DE100DD6531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B5E1C71E543DE100DD6531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B5E1CE1E543DE100DD6531;
+			remoteInfo = ConanAccessRight;
+		};
+		27B5E1F41E543DE200DD6531 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27B5E1C71E543DE100DD6531 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27B5E1CE1E543DE100DD6531;
+			remoteInfo = ConanAccessRight;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27B5E1CF1E543DE100DD6531 /* ConanAccessRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanAccessRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B5E1D31E543DE100DD6531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27B5E1D51E543DE100DD6531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		27B5E1D61E543DE100DD6531 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		27B5E1D81E543DE100DD6531 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		27B5E1D91E543DE100DD6531 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		27B5E1DC1E543DE100DD6531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27B5E1DE1E543DE100DD6531 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		27B5E1E11E543DE100DD6531 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		27B5E1E31E543DE100DD6531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B5E1E81E543DE100DD6531 /* ConanAccessRightTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConanAccessRightTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B5E1EC1E543DE100DD6531 /* ConanAccessRightTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRightTests.m; sourceTree = "<group>"; };
+		27B5E1EE1E543DE100DD6531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B5E1F31E543DE200DD6531 /* ConanAccessRightUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ConanAccessRightUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27B5E1F71E543DE200DD6531 /* ConanAccessRightUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRightUITests.m; sourceTree = "<group>"; };
+		27B5E1F91E543DE200DD6531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		27B5E2051E543DED00DD6531 /* ConanAccessRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanAccessRight.h; sourceTree = "<group>"; };
+		27B5E2061E543DED00DD6531 /* ConanAccessRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRight.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27B5E1CC1E543DE100DD6531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1E51E543DE100DD6531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1F01E543DE200DD6531 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27B5E1C61E543DE100DD6531 = {
+			isa = PBXGroup;
+			children = (
+				27B5E1D11E543DE100DD6531 /* ConanAccessRight */,
+				27B5E1EB1E543DE100DD6531 /* ConanAccessRightTests */,
+				27B5E1F61E543DE200DD6531 /* ConanAccessRightUITests */,
+				27B5E1D01E543DE100DD6531 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27B5E1D01E543DE100DD6531 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27B5E1CF1E543DE100DD6531 /* ConanAccessRight.app */,
+				27B5E1E81E543DE100DD6531 /* ConanAccessRightTests.xctest */,
+				27B5E1F31E543DE200DD6531 /* ConanAccessRightUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27B5E1D11E543DE100DD6531 /* ConanAccessRight */ = {
+			isa = PBXGroup;
+			children = (
+				27B5E2051E543DED00DD6531 /* ConanAccessRight.h */,
+				27B5E2061E543DED00DD6531 /* ConanAccessRight.m */,
+				27B5E1D51E543DE100DD6531 /* AppDelegate.h */,
+				27B5E1D61E543DE100DD6531 /* AppDelegate.m */,
+				27B5E1D81E543DE100DD6531 /* ViewController.h */,
+				27B5E1D91E543DE100DD6531 /* ViewController.m */,
+				27B5E1DB1E543DE100DD6531 /* Main.storyboard */,
+				27B5E1DE1E543DE100DD6531 /* Assets.xcassets */,
+				27B5E1E01E543DE100DD6531 /* LaunchScreen.storyboard */,
+				27B5E1E31E543DE100DD6531 /* Info.plist */,
+				27B5E1D21E543DE100DD6531 /* Supporting Files */,
+			);
+			path = ConanAccessRight;
+			sourceTree = "<group>";
+		};
+		27B5E1D21E543DE100DD6531 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27B5E1D31E543DE100DD6531 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27B5E1EB1E543DE100DD6531 /* ConanAccessRightTests */ = {
+			isa = PBXGroup;
+			children = (
+				27B5E1EC1E543DE100DD6531 /* ConanAccessRightTests.m */,
+				27B5E1EE1E543DE100DD6531 /* Info.plist */,
+			);
+			path = ConanAccessRightTests;
+			sourceTree = "<group>";
+		};
+		27B5E1F61E543DE200DD6531 /* ConanAccessRightUITests */ = {
+			isa = PBXGroup;
+			children = (
+				27B5E1F71E543DE200DD6531 /* ConanAccessRightUITests.m */,
+				27B5E1F91E543DE200DD6531 /* Info.plist */,
+			);
+			path = ConanAccessRightUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27B5E1CE1E543DE100DD6531 /* ConanAccessRight */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B5E1FC1E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRight" */;
+			buildPhases = (
+				27B5E1CB1E543DE100DD6531 /* Sources */,
+				27B5E1CC1E543DE100DD6531 /* Frameworks */,
+				27B5E1CD1E543DE100DD6531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ConanAccessRight;
+			productName = ConanAccessRight;
+			productReference = 27B5E1CF1E543DE100DD6531 /* ConanAccessRight.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27B5E1E71E543DE100DD6531 /* ConanAccessRightTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B5E1FF1E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightTests" */;
+			buildPhases = (
+				27B5E1E41E543DE100DD6531 /* Sources */,
+				27B5E1E51E543DE100DD6531 /* Frameworks */,
+				27B5E1E61E543DE100DD6531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B5E1EA1E543DE100DD6531 /* PBXTargetDependency */,
+			);
+			name = ConanAccessRightTests;
+			productName = ConanAccessRightTests;
+			productReference = 27B5E1E81E543DE100DD6531 /* ConanAccessRightTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		27B5E1F21E543DE200DD6531 /* ConanAccessRightUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27B5E2021E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightUITests" */;
+			buildPhases = (
+				27B5E1EF1E543DE200DD6531 /* Sources */,
+				27B5E1F01E543DE200DD6531 /* Frameworks */,
+				27B5E1F11E543DE200DD6531 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27B5E1F51E543DE200DD6531 /* PBXTargetDependency */,
+			);
+			name = ConanAccessRightUITests;
+			productName = ConanAccessRightUITests;
+			productReference = 27B5E1F31E543DE200DD6531 /* ConanAccessRightUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27B5E1C71E543DE100DD6531 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = Conan;
+				TargetAttributes = {
+					27B5E1CE1E543DE100DD6531 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 938EMAYW6W;
+						ProvisioningStyle = Automatic;
+					};
+					27B5E1E71E543DE100DD6531 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 938EMAYW6W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 27B5E1CE1E543DE100DD6531;
+					};
+					27B5E1F21E543DE200DD6531 = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 938EMAYW6W;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 27B5E1CE1E543DE100DD6531;
+					};
+				};
+			};
+			buildConfigurationList = 27B5E1CA1E543DE100DD6531 /* Build configuration list for PBXProject "ConanAccessRight" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27B5E1C61E543DE100DD6531;
+			productRefGroup = 27B5E1D01E543DE100DD6531 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27B5E1CE1E543DE100DD6531 /* ConanAccessRight */,
+				27B5E1E71E543DE100DD6531 /* ConanAccessRightTests */,
+				27B5E1F21E543DE200DD6531 /* ConanAccessRightUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27B5E1CD1E543DE100DD6531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B5E1E21E543DE100DD6531 /* LaunchScreen.storyboard in Resources */,
+				27B5E1DF1E543DE100DD6531 /* Assets.xcassets in Resources */,
+				27B5E1DD1E543DE100DD6531 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1E61E543DE100DD6531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1F11E543DE200DD6531 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27B5E1CB1E543DE100DD6531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */,
+				27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */,
+				27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */,
+				27B5E1D41E543DE100DD6531 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1E41E543DE100DD6531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B5E1ED1E543DE100DD6531 /* ConanAccessRightTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27B5E1EF1E543DE200DD6531 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27B5E1F81E543DE200DD6531 /* ConanAccessRightUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27B5E1EA1E543DE100DD6531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B5E1CE1E543DE100DD6531 /* ConanAccessRight */;
+			targetProxy = 27B5E1E91E543DE100DD6531 /* PBXContainerItemProxy */;
+		};
+		27B5E1F51E543DE200DD6531 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27B5E1CE1E543DE100DD6531 /* ConanAccessRight */;
+			targetProxy = 27B5E1F41E543DE200DD6531 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27B5E1DB1E543DE100DD6531 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B5E1DC1E543DE100DD6531 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27B5E1E01E543DE100DD6531 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27B5E1E11E543DE100DD6531 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27B5E1FA1E543DE200DD6531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		27B5E1FB1E543DE200DD6531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27B5E1FD1E543DE200DD6531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		27B5E1FE1E543DE200DD6531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRight/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRight;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		27B5E2001E543DE200DD6531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConanAccessRight.app/ConanAccessRight";
+			};
+			name = Debug;
+		};
+		27B5E2011E543DE200DD6531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRightTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRightTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ConanAccessRight.app/ConanAccessRight";
+			};
+			name = Release;
+		};
+		27B5E2031E543DE200DD6531 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ConanAccessRight;
+			};
+			name = Debug;
+		};
+		27B5E2041E543DE200DD6531 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 938EMAYW6W;
+				INFOPLIST_FILE = ConanAccessRightUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ConanGroup.ConanAccessRightUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ConanAccessRight;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27B5E1CA1E543DE100DD6531 /* Build configuration list for PBXProject "ConanAccessRight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5E1FA1E543DE200DD6531 /* Debug */,
+				27B5E1FB1E543DE200DD6531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27B5E1FC1E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRight" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5E1FD1E543DE200DD6531 /* Debug */,
+				27B5E1FE1E543DE200DD6531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27B5E1FF1E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5E2001E543DE200DD6531 /* Debug */,
+				27B5E2011E543DE200DD6531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		27B5E2021E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27B5E2031E543DE200DD6531 /* Debug */,
+				27B5E2041E543DE200DD6531 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27B5E1C71E543DE100DD6531 /* Project object */;
+}

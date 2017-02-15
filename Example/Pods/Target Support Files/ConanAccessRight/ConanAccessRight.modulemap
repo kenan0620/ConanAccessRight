@@ -1,6 +1,0 @@
-framework module ConanAccessRight {
-  umbrella header "ConanAccessRight-umbrella.h"
-
-  export *
-  module * { export * }
-}
