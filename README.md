@@ -32,3 +32,5 @@ ConanAccessRight is available under the MIT license. See the LICENSE file for mo
 ##更新说明
 
 ~~> 0.1.0 对APP的权限进行获取和判断.
+
+~~> 0.1.1 echo "3.0" > .swift-version.
