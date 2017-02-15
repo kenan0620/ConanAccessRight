@@ -34,9 +34,9 @@
 
 -(void)accessRightBtnEvent
 {
-    [[ConanAccessRight sharedInstance]ConanAccessRightCamera:^(BOOL Authorize) {
+    [[ConanAccessRight sharedInstance]ConanAccessRightMotion:^(BOOL Authorize) {
         if (Authorize) {
-            NSLog(@"授权");
+            NSLog(@"已经授权");
         } else {
             NSLog(@"未授权");
         }

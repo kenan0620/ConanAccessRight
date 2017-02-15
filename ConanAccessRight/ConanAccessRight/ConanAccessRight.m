@@ -15,6 +15,13 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (copy, nonatomic) LocationResult locationBlock;
 
+@property (strong, nonatomic) CMPedometer *stepCounter;
+@property (strong, nonatomic) UILabel *stepsLabel;
+@property (strong, nonatomic) UILabel *distanceLabel;
+@property (strong, nonatomic) UILabel *paceLabel;
+@property (strong, nonatomic) UILabel *cadenceLabel;
+@property (strong, nonatomic) UILabel *flightsUpLabel;
+@property (strong, nonatomic) UILabel *flightsDownLabel;
 @end
 @implementation ConanAccessRight
 + (ConanAccessRight *)sharedInstance
@@ -157,7 +164,35 @@
  */
 -(void)ConanAccessRightMotion:(void (^)(BOOL Authorize))result
 {
+    self.stepCounter = [[CMPedometer alloc]init];
+    //国际标准时间
+    NSDate *date = [NSDate date];
     
+    NSTimeZone *zone = [NSTimeZone systemTimeZone];
+    
+    NSInteger interval = [zone secondsFromGMTForDate: date];
+    //北京本地实际时间
+    NSDate *localeDate = [date  dateByAddingTimeInterval: interval];
+    
+    NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+    [dateFormatter setDateFormat:@"yyyy-MM-dd HHH:mm:ss"];
+    NSDate *fromDate =
+    [dateFormatter dateFromString:[dateFormatter stringFromDate:localeDate]];
+    
+    [self.stepCounter queryPedometerDataFromDate:date toDate:fromDate withHandler:^(CMPedometerData * _Nullable pedometerData, NSError * _Nullable error) {
+
+        [[NSUserDefaults standardUserDefaults]setObject:pedometerData.numberOfSteps forKey:@"pedometerSteps"];
+
+        if(!pedometerData.numberOfSteps) {
+
+            result(NO);
+        }else
+        {
+            result(YES);
+//            NSLog(@"coann--%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"pedometerSteps"]);
+        }
+
+    }];
 }
 
 /*

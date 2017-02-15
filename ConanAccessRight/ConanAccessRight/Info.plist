@@ -23,7 +23,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Privacy - Microphone Usage Description</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Privacy - Motion Usage Description</string>
+	<string>想访问您的活动与体能训练记录</string>
 	<key>kTCCServiceMediaLibrary</key>
 	<string>Privacy - Music Usage Description</string>
 	<key>NSPhotoLibraryUsageDescription</key>
