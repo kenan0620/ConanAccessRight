@@ -1,0 +1,6 @@
+framework module Pods_ConanAccessRight_Example {
+  umbrella header "Pods-ConanAccessRight_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

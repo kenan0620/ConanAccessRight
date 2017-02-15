@@ -1,0 +1,16 @@
+PODS:
+  - ConanAccessRight (0.1.0)
+
+DEPENDENCIES:
+  - ConanAccessRight (from `../`)
+
+EXTERNAL SOURCES:
+  ConanAccessRight:
+    :path: ../
+
+SPEC CHECKSUMS:
+  ConanAccessRight: 7a42d9896c07472ddfd96d0f411331184e2d4562
+
+PODFILE CHECKSUM: 4f8b7ce6fd1fa4fc66c7e7afb5fb9100fd6b025d
+
+COCOAPODS: 1.2.0

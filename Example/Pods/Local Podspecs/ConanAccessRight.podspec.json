@@ -1,0 +1,23 @@
+{
+  "name": "ConanAccessRight",
+  "version": "0.1.0",
+  "summary": "对APP的权限进行获取和判断.",
+  "description": "对APP的权限进行获取和判断。 /* 蓝牙权限 */ / 相机权限 */ / 通讯录权限 */ / 健康分享权限 */ / 健康更新权限 */ / 智能家居权限 */ / 媒体库权限 */ / 麦克风权限 */ / 运动与健身权限 */ / 音乐权限 */ / 相册权限 */ / Siri权限 */ / 语音转文字权限 */ / 电视供应商权限 */ / 备忘录权限、日历权限 */ / 定位权限 */ / *推送权限 */",
+  "homepage": "https://github.com/kenan0620/ConanAccessRight",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "kenan0620": "houkenan0620@126.com"
+  },
+  "source": {
+    "git": "https://github.com/kenan0620/ConanAccessRight.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "requires_arc": true,
+  "source_files": "ConanAccessRight/*.{h,m}"
+}
