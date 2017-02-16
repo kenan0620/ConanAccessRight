@@ -127,18 +127,26 @@
 }
 
 /*
- *定位权限
- */
--(void)ConanAccessRightLocatio:(void (^)(BOOL Authorize))result
-{
-}
-
-/*
  *媒体库权限
+ *
+ *    
+ MPMediaLibraryAuthorizationStatusNotDetermined = 0,用户尚未做出选择这个应用程序的问候
+ MPMediaLibraryAuthorizationStatusDenied,用户已经明确否认了这一照片数据的应用程序访问
+ MPMediaLibraryAuthorizationStatusRestricted,此应用程序没有被授权访问的照片数据。可能是家长控制权限
+ MPMediaLibraryAuthorizationStatusAuthorized,用户已经授权应用访问照片数据
  */
 -(void)ConanAccessRightMediaLibrary:(void (^)(BOOL Authorize))result
 {
-    
+    [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus mediaLibrarystatus){
+        
+        if(mediaLibrarystatus == MPMediaLibraryAuthorizationStatusNotDetermined){
+            result(NULL);
+        } else if (mediaLibrarystatus == MPMediaLibraryAuthorizationStatusAuthorized) {
+            result(YES);
+        } else {
+            result(NO);
+        }
+    }];
 }
 
 /*

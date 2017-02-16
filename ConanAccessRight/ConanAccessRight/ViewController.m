@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "ConanAccessRight.h"
+#import <MediaPlayer/MediaPlayer.h>
 @interface ViewController ()
 @property (nonatomic ,strong) UIButton *conanAccessRightBtn;
 @end
@@ -34,7 +35,7 @@
 
 -(void)accessRightBtnEvent
 {
-    [[ConanAccessRight sharedInstance]ConanAccessRightMotion:^(BOOL Authorize) {
+    [[ConanAccessRight sharedInstance]ConanAccessRightMediaLibrary:^(BOOL Authorize) {
         if (Authorize) {
             NSLog(@"已经授权");
         } else {
@@ -43,6 +44,45 @@
     }];
 
 }
+
+-(void) checkMediaLibraryPermissions {
+    [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status){
+        switch (status) {
+            case MPMediaLibraryAuthorizationStatusNotDetermined: {
+                // not determined
+                break;
+            }
+            case MPMediaLibraryAuthorizationStatusRestricted: {
+                // restricted
+                break;
+            }
+            case MPMediaLibraryAuthorizationStatusDenied: {
+                // denied
+                break;
+            }
+            case MPMediaLibraryAuthorizationStatusAuthorized: {
+                // authorized
+                break;
+            }
+            default: {
+                break;
+            }
+        }
+    }];
+}
+
+-(void)desc
+{
+//    蓝牙权限ConanAccessRightBluetoothPeripheral
+//    健康分享权限ConanAccessRightHealthShare
+//    健康更新权限ConanAccessRightHealthUpdate
+//    智能家居权限ConanAccessRightHomeKit
+//    音乐权限ConanAccessRightMusic
+//    Siri权限ConanAccessRightSiri
+//    语音转文字权限ConanAccessRightSpeechRecognition
+//    电视供应商权限ConanAccessRightTVProvider
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

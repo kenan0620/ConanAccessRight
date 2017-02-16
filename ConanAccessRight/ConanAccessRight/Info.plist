@@ -19,7 +19,7 @@
 	<key>NSLocationAlwaysUsageDescription</key>
 	<string>Privacy - Location Always Usage Description</string>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>Privacy - Media Library Usage Description</string>
+	<string>想访问您的 Apple Music 和您的媒体资料库</string>
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Privacy - Microphone Usage Description</string>
 	<key>NSMotionUsageDescription</key>

@@ -13,7 +13,7 @@
 #import <Contacts/Contacts.h>
 #import <AddressBook/AddressBook.h>
 #import <EventKit/EventKit.h>
-
+#import <MediaPlayer/MediaPlayer.h>
 #import <CoreMotion/CoreMotion.h>
 
 typedef NS_ENUM(NSInteger, LocationAuthorizedType) {
