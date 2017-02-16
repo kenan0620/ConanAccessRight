@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 #import "ConanAccessRight.h"
-#import <MediaPlayer/MediaPlayer.h>
+
 @interface ViewController ()
 @property (nonatomic ,strong) UIButton *conanAccessRightBtn;
 @end
@@ -30,43 +30,16 @@
     self.conanAccessRightBtn.layer.masksToBounds = YES;
     [self.conanAccessRightBtn addTarget:self action:@selector(accessRightBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.conanAccessRightBtn];
-    
+
 }
 
 -(void)accessRightBtnEvent
 {
-    [[ConanAccessRight sharedInstance]ConanAccessRightMediaLibrary:^(BOOL Authorize) {
+    [[ConanAccessRight sharedInstance]ConanAccessRightEvent:EventAuthorizedReminder result:^(BOOL Authorize) {
         if (Authorize) {
             NSLog(@"已经授权");
         } else {
             NSLog(@"未授权");
-        }
-    }];
-
-}
-
--(void) checkMediaLibraryPermissions {
-    [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus status){
-        switch (status) {
-            case MPMediaLibraryAuthorizationStatusNotDetermined: {
-                // not determined
-                break;
-            }
-            case MPMediaLibraryAuthorizationStatusRestricted: {
-                // restricted
-                break;
-            }
-            case MPMediaLibraryAuthorizationStatusDenied: {
-                // denied
-                break;
-            }
-            case MPMediaLibraryAuthorizationStatusAuthorized: {
-                // authorized
-                break;
-            }
-            default: {
-                break;
-            }
         }
     }];
 }

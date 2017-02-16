@@ -5,11 +5,11 @@
 	<key>NSBluetoothPeripheralUsageDescription</key>
 	<string>Privacy - Bluetooth Peripheral Usage Description</string>
 	<key>NSCalendarsUsageDescription</key>
-	<string>Privacy - Calendars Usage Description</string>
+	<string>想要访问您的日历</string>
 	<key>NSCameraUsageDescription</key>
-	<string>Privacy - Camera Usage Description</string>
+	<string>想要访问您的相机</string>
 	<key>NSContactsUsageDescription</key>
-	<string>Privacy - Contacts Usage Description</string>
+	<string>想要访问您的通讯录</string>
 	<key>NSHealthShareUsageDescription</key>
 	<string>Privacy - Health Share Usage Description</string>
 	<key>NSHealthUpdateUsageDescription</key>
@@ -17,19 +17,19 @@
 	<key>NSHomeKitUsageDescription</key>
 	<string>Privacy - HomeKit Usage Description</string>
 	<key>NSLocationAlwaysUsageDescription</key>
-	<string>Privacy - Location Always Usage Description</string>
+	<string>想要访问您的位置</string>
 	<key>NSAppleMusicUsageDescription</key>
-	<string>想访问您的 Apple Music 和您的媒体资料库</string>
+	<string>想要访问您的 Apple Music 和您的媒体资料库</string>
 	<key>NSMicrophoneUsageDescription</key>
-	<string>Privacy - Microphone Usage Description</string>
+	<string>想要访问您的麦克风</string>
 	<key>NSMotionUsageDescription</key>
-	<string>想访问您的活动与体能训练记录</string>
+	<string>想要访问您的活动与体能训练记录</string>
 	<key>kTCCServiceMediaLibrary</key>
 	<string>Privacy - Music Usage Description</string>
 	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Privacy - Photo Library Usage Description</string>
+	<string>想访问您的照片</string>
 	<key>NSRemindersUsageDescription</key>
-	<string>Privacy - Reminders Usage Description</string>
+	<string>想访问您的备忘录</string>
 	<key>NSSiriUsageDescription</key>
 	<string>Privacy - Siri Usage Description</string>
 	<key>NSSpeechRecognitionUsageDescription</key>
