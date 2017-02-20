@@ -127,7 +127,7 @@
 }
 
 /*
- *媒体库权限
+ *APPle Music 和媒体资料库权限
  *
  *    
  MPMediaLibraryAuthorizationStatusNotDetermined = 0,用户尚未做出选择这个应用程序的问候
@@ -258,7 +258,7 @@
 }
 
 /*
- *备忘录权限、日历权限
+ *备忘录(提醒事项)权限、日历权限
  */
 -(void)ConanAccessRightEvent:(EventAuthorizedType)eventType result:(void (^)(BOOL Authorize))result
 {
@@ -350,6 +350,11 @@
                 break;
             default:
                 break;
+        };
+        if (state == kCTCellularDataNotRestricted) {
+            result(YES);
+        } else {
+            result(NO);
         };
     };
 }

@@ -116,4 +116,6 @@ typedef void (^LocationResult) (BOOL Authorize, CLLocation *location);
  *推送权限
  */
 -(void)ConanAccessRightPush:(void (^)(BOOL Authorize))result;
+
+-(void)ConanAccessRightCTCellularDataRestrictedState:(void (^)(BOOL Authorize))result;
 @end

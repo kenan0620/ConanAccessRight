@@ -214,6 +214,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = 938EMAYW6W;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
 					};
 					27B5E1E71E543DE100DD6531 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -524,6 +529,7 @@
 				27B5E1FE1E543DE200DD6531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B5E1FF1E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightTests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +538,7 @@
 				27B5E2011E543DE200DD6531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		27B5E2021E543DE200DD6531 /* Build configuration list for PBXNativeTarget "ConanAccessRightUITests" */ = {
 			isa = XCConfigurationList;
@@ -540,6 +547,7 @@
 				27B5E2041E543DE200DD6531 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

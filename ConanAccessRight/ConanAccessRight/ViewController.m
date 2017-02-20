@@ -35,7 +35,17 @@
 
 -(void)accessRightBtnEvent
 {
-    [[ConanAccessRight sharedInstance]ConanAccessRightEvent:EventAuthorizedReminder result:^(BOOL Authorize) {
+//    CGRect bouds = [[UIScreen mainScreen]applicationFrame];
+//    UIWebView* webView = [[UIWebView alloc]initWithFrame:bouds];
+//    webView.scalesPageToFit = YES;//自动对页面进行缩放以适应屏幕
+//    
+//    [self.view addSubview:webView];
+//    NSURL* url = [NSURL URLWithString:@"http://www.baidu.com"];//创建URL
+//    NSURLRequest* request = [NSURLRequest requestWithURL:url];//创建NSURLRequest
+//    [webView loadRequest:request];//加载
+    
+    
+    [[ConanAccessRight sharedInstance]ConanAccessRightCTCellularDataRestrictedState:^(BOOL Authorize) {
         if (Authorize) {
             NSLog(@"已经授权");
         } else {
