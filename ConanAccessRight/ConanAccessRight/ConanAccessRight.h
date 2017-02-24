@@ -15,7 +15,7 @@
 #import <EventKit/EventKit.h>
 #import <MediaPlayer/MediaPlayer.h>
 #import <CoreMotion/CoreMotion.h>
-
+#import <CoreBluetooth/CoreBluetooth.h>
 typedef NS_ENUM(NSInteger, LocationAuthorizedType) {
     LocationAuthorizedAlways,
     LocationAuthorizedWhenInUse
@@ -28,7 +28,7 @@ typedef NS_ENUM(NSInteger, EventAuthorizedType) {
 
 typedef void (^LocationResult) (BOOL Authorize, CLLocation *location);
 
-@interface ConanAccessRight : NSObject
+@interface ConanAccessRight : NSObject<CBCentralManagerDelegate>
 
 + (ConanAccessRight *)sharedInstance;
 

@@ -18,6 +18,7 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
     _manager.pausesLocationUpdatesAutomatically=NO;//该模式是抵抗ios在后台杀死程序
+    
     return YES;
 }
 

@@ -10,7 +10,11 @@
 #import "ConanAccessRight.h"
 
 @interface ViewController ()
+
 @property (nonatomic ,strong) UIButton *conanAccessRightBtn;
+
+
+
 @end
 
 @implementation ViewController
@@ -30,6 +34,8 @@
     self.conanAccessRightBtn.layer.masksToBounds = YES;
     [self.conanAccessRightBtn addTarget:self action:@selector(accessRightBtnEvent) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:self.conanAccessRightBtn];
+    
+    
 
 }
 
@@ -44,19 +50,20 @@
 //    NSURLRequest* request = [NSURLRequest requestWithURL:url];//创建NSURLRequest
 //    [webView loadRequest:request];//加载
     
+
     
-    [[ConanAccessRight sharedInstance]ConanAccessRightCTCellularDataRestrictedState:^(BOOL Authorize) {
+    [[ConanAccessRight sharedInstance]ConanAccessRightBluetoothPeripheral:^(BOOL Authorize) {
         if (Authorize) {
             NSLog(@"已经授权");
         } else {
             NSLog(@"未授权");
         }
     }];
+
 }
 
 -(void)desc
 {
-//    蓝牙权限ConanAccessRightBluetoothPeripheral
 //    健康分享权限ConanAccessRightHealthShare
 //    健康更新权限ConanAccessRightHealthUpdate
 //    智能家居权限ConanAccessRightHomeKit

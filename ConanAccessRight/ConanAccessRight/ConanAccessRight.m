@@ -16,12 +16,17 @@
 @property (copy, nonatomic) LocationResult locationBlock;
 
 @property (strong, nonatomic) CMPedometer *stepCounter;
-@property (strong, nonatomic) UILabel *stepsLabel;
-@property (strong, nonatomic) UILabel *distanceLabel;
-@property (strong, nonatomic) UILabel *paceLabel;
-@property (strong, nonatomic) UILabel *cadenceLabel;
-@property (strong, nonatomic) UILabel *flightsUpLabel;
-@property (strong, nonatomic) UILabel *flightsDownLabel;
+
+@property (nonatomic, strong) CBCentralManager *cMgr;
+
+@property (nonatomic, strong) CBPeripheral *peripheral;
+
+//@property (strong, nonatomic) UILabel *stepsLabel;
+//@property (strong, nonatomic) UILabel *distanceLabel;
+//@property (strong, nonatomic) UILabel *paceLabel;
+//@property (strong, nonatomic) UILabel *cadenceLabel;
+//@property (strong, nonatomic) UILabel *flightsUpLabel;
+//@property (strong, nonatomic) UILabel *flightsDownLabel;
 @end
 @implementation ConanAccessRight
 + (ConanAccessRight *)sharedInstance
@@ -39,8 +44,76 @@
  */
 -(void)ConanAccessRightBluetoothPeripheral:(void (^)(BOOL Authorize))result
 {
+  CBCentralManager *resutlMana =  [self cmgr];
+/*
+ CBCentralManagerStateUnknown://未知状态
+ CBCentralManagerStateResetting://重新设置
+ CBCentralManagerStateUnsupported://不支持蓝牙
+ CBCentralManagerStateUnauthorized://未被授权的
+ CBCentralManagerStatePoweredOff://蓝牙未开启
+ CBCentralManagerStatePoweredOn://蓝牙已开启
+ */
+ 
+    if (resutlMana.state == CBCentralManagerStatePoweredOn) {
+        result(YES);
+        NSLog(@"CBCentralManagerStatePoweredOn");//蓝牙已开启
+        //            // 在中心管理者成功开启后再进行一些操作
+        //            // 搜索外设
+        //            [self.cMgr scanForPeripheralsWithServices:nil // 通过某些服务筛选外设
+        //                                              options:nil]; // dict,条件
+        //            // 搜索成功之后,会调用我们找到外设的代理方法
+        //            // - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI; //找到外设
+    } else {
+        result(NO);
+    }
+}
+
+-(CBCentralManager *)cmgr
+{
+    if (!_cMgr) {
+        _cMgr = [[CBCentralManager alloc] initWithDelegate:self queue:nil];
+    }
+    return _cMgr;
+}
+//只要中心管理者初始化 就会触发此代理方法 判断手机蓝牙状态
+- (void)centralManagerDidUpdateState:(CBCentralManager *)central
+{
+
+//    switch (central.state) {
+//        case 0:
+//            NSLog(@"CBCentralManagerStateUnknown");//未知状态
+//            break;
+//        case 1:
+//            NSLog(@"CBCentralManagerStateResetting");//重新设置
+//            break;
+//        case 2:
+//            NSLog(@"CBCentralManagerStateUnsupported");//不支持蓝牙
+//            break;
+//        case 3:
+//            NSLog(@"CBCentralManagerStateUnauthorized");//未被授权的
+//            break;
+//        case 4:
+//        {
+//            NSLog(@"CBCentralManagerStatePoweredOff");//蓝牙未开启
+//        }
+//            break;
+//        case 5:
+//        {
+//            NSLog(@"CBCentralManagerStatePoweredOn");//蓝牙已开启
+//            // 在中心管理者成功开启后再进行一些操作
+//            // 搜索外设
+//            [self.cMgr scanForPeripheralsWithServices:nil // 通过某些服务筛选外设
+//                                              options:nil]; // dict,条件
+//            // 搜索成功之后,会调用我们找到外设的代理方法
+//            // - (void)centralManager:(CBCentralManager *)central didDiscoverPeripheral:(CBPeripheral *)peripheral advertisementData:(NSDictionary *)advertisementData RSSI:(NSNumber *)RSSI; //找到外设
+//        }
+//            break;
+//        default:
+//            break;
+//    }
     
 }
+
 
 /*
  *相机权限
@@ -331,7 +404,7 @@
 
 
 /*
- *1、联网权限
+ *联网权限
  */
 -(void)ConanAccessRightCTCellularDataRestrictedState:(void (^)(BOOL Authorize))result
 {
@@ -340,13 +413,15 @@
         //获取联网状态
         switch (state) {
             case kCTCellularDataRestricted:
-                NSLog(@"Restricrted");
+                
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
                 break;
             case kCTCellularDataNotRestricted:
-                NSLog(@"Not Restricted");
+                
                 break;
             case kCTCellularDataRestrictedStateUnknown:
-                NSLog(@"Unknown");
+                [[UIApplication sharedApplication] openURL:[NSURL URLWithString:UIApplicationOpenSettingsURLString]];
+
                 break;
             default:
                 break;
