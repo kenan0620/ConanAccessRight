@@ -276,12 +276,8 @@
 
 -(void)desc
 {
-//    健康分享权限ConanAccessRightHealthShare
-//    健康更新权限ConanAccessRightHealthUpdate
 //    智能家居权限ConanAccessRightHomeKit
-//    音乐权限ConanAccessRightMusic
 //    Siri权限ConanAccessRightSiri
-//    语音转文字权限ConanAccessRightSpeechRecognition
 //    电视供应商权限ConanAccessRightTVProvider
 }
 
