@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271F5D911E600BCF00F2B992 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F5D901E600BCF00F2B992 /* HealthKit.framework */; };
+		271F5D971E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */; };
+		271F5D9A1E601DDF00F2B992 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F5D991E601DDF00F2B992 /* SecViewController.m */; };
+		271F5D9C1E6025D800F2B992 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F5D9B1E6025D800F2B992 /* HomeKit.framework */; };
 		27B5E1D41E543DE100DD6531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D31E543DE100DD6531 /* main.m */; };
 		27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D61E543DE100DD6531 /* AppDelegate.m */; };
 		27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D91E543DE100DD6531 /* ViewController.m */; };
@@ -36,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271F5D8E1E600BCF00F2B992 /* ConanAccessRight.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ConanAccessRight.entitlements; sourceTree = "<group>"; };
+		271F5D901E600BCF00F2B992 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		271F5D951E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+AAPLExtensions.h"; sourceTree = "<group>"; };
+		271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
+		271F5D981E601DDF00F2B992 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
+		271F5D991E601DDF00F2B992 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
+		271F5D9B1E6025D800F2B992 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		27B5E1CF1E543DE100DD6531 /* ConanAccessRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanAccessRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B5E1D31E543DE100DD6531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27B5E1D51E543DE100DD6531 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -61,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271F5D9C1E6025D800F2B992 /* HomeKit.framework in Frameworks */,
+				271F5D911E600BCF00F2B992 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +94,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271F5D8F1E600BCF00F2B992 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				271F5D9B1E6025D800F2B992 /* HomeKit.framework */,
+				271F5D901E600BCF00F2B992 /* HealthKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		27B5E1C61E543DE100DD6531 = {
 			isa = PBXGroup;
 			children = (
@@ -88,6 +110,7 @@
 				27B5E1EB1E543DE100DD6531 /* ConanAccessRightTests */,
 				27B5E1F61E543DE200DD6531 /* ConanAccessRightUITests */,
 				27B5E1D01E543DE100DD6531 /* Products */,
+				271F5D8F1E600BCF00F2B992 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -104,12 +127,17 @@
 		27B5E1D11E543DE100DD6531 /* ConanAccessRight */ = {
 			isa = PBXGroup;
 			children = (
+				271F5D8E1E600BCF00F2B992 /* ConanAccessRight.entitlements */,
 				27B5E2051E543DED00DD6531 /* ConanAccessRight.h */,
 				27B5E2061E543DED00DD6531 /* ConanAccessRight.m */,
 				27B5E1D51E543DE100DD6531 /* AppDelegate.h */,
 				27B5E1D61E543DE100DD6531 /* AppDelegate.m */,
+				271F5D981E601DDF00F2B992 /* SecViewController.h */,
+				271F5D991E601DDF00F2B992 /* SecViewController.m */,
 				27B5E1D81E543DE100DD6531 /* ViewController.h */,
 				27B5E1D91E543DE100DD6531 /* ViewController.m */,
+				271F5D951E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.h */,
+				271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */,
 				27B5E1DB1E543DE100DD6531 /* Main.storyboard */,
 				27B5E1DE1E543DE100DD6531 /* Assets.xcassets */,
 				27B5E1E01E543DE100DD6531 /* LaunchScreen.storyboard */,
@@ -218,6 +246,12 @@
 							com.apple.BackgroundModes = {
 								enabled = 1;
 							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+							com.apple.HomeKit = {
+								enabled = 1;
+							};
 						};
 					};
 					27B5E1E71E543DE100DD6531 = {
@@ -286,6 +320,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271F5D9A1E601DDF00F2B992 /* SecViewController.m in Sources */,
+				271F5D971E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m in Sources */,
 				27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */,
 				27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */,
 				27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */,
@@ -438,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConanAccessRight/ConanAccessRight.entitlements;
 				DEVELOPMENT_TEAM = 938EMAYW6W;
 				INFOPLIST_FILE = ConanAccessRight/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -451,6 +488,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = ConanAccessRight/ConanAccessRight.entitlements;
 				DEVELOPMENT_TEAM = 938EMAYW6W;
 				INFOPLIST_FILE = ConanAccessRight/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;

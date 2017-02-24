@@ -7,15 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <CoreLocation/CoreLocation.h>
-#import <AVFoundation/AVFoundation.h>
-#import <Photos/Photos.h>
-#import <Contacts/Contacts.h>
-#import <AddressBook/AddressBook.h>
-#import <EventKit/EventKit.h>
-#import <MediaPlayer/MediaPlayer.h>
-#import <CoreMotion/CoreMotion.h>
-#import <CoreBluetooth/CoreBluetooth.h>
+
+
+@import CoreLocation;
+@import AVFoundation;
+
+@import Photos;
+@import Contacts;
+@import AddressBook;
+
+@import EventKit;
+
+@import MediaPlayer;
+@import CoreMotion;
+@import CoreBluetooth;
+
+@import Speech;
 typedef NS_ENUM(NSInteger, LocationAuthorizedType) {
     LocationAuthorizedAlways,
     LocationAuthorizedWhenInUse

@@ -281,7 +281,17 @@
  */
 -(void)ConanAccessRightMusic:(void (^)(BOOL Authorize))result
 {
-    
+    [MPMediaLibrary requestAuthorization:^(MPMediaLibraryAuthorizationStatus mediaLibrarystatus){
+        
+        if(mediaLibrarystatus == MPMediaLibraryAuthorizationStatusNotDetermined){
+            result(NULL);
+        } else if (mediaLibrarystatus == MPMediaLibraryAuthorizationStatusAuthorized) {
+            result(YES);
+        } else {
+            result(NO);
+        }
+    }];
+
 }
 
 /*
@@ -316,9 +326,32 @@
 
 /*
  *语音转文字权限
+ SFSpeechRecognizerAuthorizationStatusNotDetermined,
+ SFSpeechRecognizerAuthorizationStatusDenied,
+ SFSpeechRecognizerAuthorizationStatusRestricted,
+ SFSpeechRecognizerAuthorizationStatusAuthorized,
  */
 -(void)ConanAccessRightSpeechRecognition:(void (^)(BOOL Authorize))result
 {
+    
+    SFSpeechRecognizerAuthorizationStatus speechRecognitionStatus;
+    if (speechRecognitionStatus == SFSpeechRecognizerAuthorizationStatusNotDetermined) {
+        [SFSpeechRecognizer requestAuthorization:^(SFSpeechRecognizerAuthorizationStatus status) {
+            if (status == SFSpeechRecognizerAuthorizationStatusAuthorized) {
+                return result(YES);
+            }else
+            {
+                return result(NO);
+            }
+        }];
+
+    } else if(speechRecognitionStatus == SFSpeechRecognizerAuthorizationStatusAuthorized){
+        return result(YES);
+    }else
+    {
+        return result(NO);
+    }
+    
     
 }
 
