@@ -7,8 +7,13 @@
 //
 
 #import "AppDelegate.h"
-#import<CoreLocation/CoreLocation.h>
-#import "ViewController.h"
+
+#import "FirstVC.h"
+#import "SecondVC.h"
+#import "ThirdVC.h"
+
+@import HealthKit;
+@import CoreLocation;
 
 @import HealthKit;
 @interface AppDelegate ()
@@ -25,18 +30,55 @@
     // Override point for customization after application launch.
     _manager.pausesLocationUpdatesAutomatically=NO;//该模式是抵抗ios在后台杀死程序
     
+    self.window =[[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.rootViewController = [AppDelegate setNav];
+    [self.window makeKeyAndVisible];
+    
     self.healthStore = [[HKHealthStore alloc] init];
     
-    ViewController *vc= [[ ViewController alloc]init];
+    [self setUpHealthStoreForTabBarControllers];
     
-//     [vc setHealthStore:self.healthStore];
-    UINavigationController *na=[[ UINavigationController alloc]initWithRootViewController:vc];
-    self.window.rootViewController = na;
-    [self.window makeKeyAndVisible];
-//    [self setUpHealthStoreForTabBarControllers];
+
     
     return YES;
 }
+
++(UITabBarController *)setNav
+{
+    //步骤1：初始化视图控制器
+    FirstVC *untreatVC = [[FirstVC alloc] init]; //未处理
+    SecondVC *treatVC = [[SecondVC alloc] init]; //已处理
+    ThirdVC *manaVC = [[ThirdVC alloc] init]; //管理
+    
+    //步骤2：将视图控制器绑定到导航控制器上
+    UINavigationController *nav1C = [[UINavigationController alloc] initWithRootViewController:untreatVC];
+    UINavigationController *nav2C = [[UINavigationController alloc] initWithRootViewController:treatVC];
+    UINavigationController *nav3C = [[UINavigationController alloc] initWithRootViewController:manaVC];
+    
+    //步骤3：将导航控制器绑定到TabBar控制器上
+    UITabBarController *tabBarController = [[UITabBarController alloc] init];
+    
+    
+    //改变tabBar的背景颜色
+    UIView *barBgView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 49)];
+    barBgView.backgroundColor = [UIColor whiteColor];
+    [tabBarController.tabBar insertSubview:barBgView atIndex:0];
+    tabBarController.tabBar.opaque = YES;
+    
+    tabBarController.viewControllers = @[nav1C,nav2C,nav3C]; //需要先绑定viewControllers数据源
+    //初始化TabBar数据源
+    NSArray *titles = @[@"未处理",@"已处理",@"管理"];
+    
+    //绑定TabBar数据源
+    for (int i = 0; i<tabBarController.tabBar.items.count; i++) {
+        UITabBarItem *item = (UITabBarItem *)tabBarController.tabBar.items[i];
+        item.title = titles[i];
+        tabBarController.tabBar.tintColor = [UIColor orangeColor];
+    }
+    
+    return tabBarController;
+}
+
 
 #pragma mark - Convenience
 

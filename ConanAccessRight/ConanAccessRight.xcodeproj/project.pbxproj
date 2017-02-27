@@ -19,6 +19,9 @@
 		27B5E1ED1E543DE100DD6531 /* ConanAccessRightTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1EC1E543DE100DD6531 /* ConanAccessRightTests.m */; };
 		27B5E1F81E543DE200DD6531 /* ConanAccessRightUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1F71E543DE200DD6531 /* ConanAccessRightUITests.m */; };
 		27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E2061E543DED00DD6531 /* ConanAccessRight.m */; };
+		27EF32341E641BF90042ABBF /* FirstVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF322F1E641BF90042ABBF /* FirstVC.m */; };
+		27EF32351E641BF90042ABBF /* SecondVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF32311E641BF90042ABBF /* SecondVC.m */; };
+		27EF32361E641BF90042ABBF /* ThirdVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 27EF32331E641BF90042ABBF /* ThirdVC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +65,12 @@
 		27B5E1F91E543DE200DD6531 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		27B5E2051E543DED00DD6531 /* ConanAccessRight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConanAccessRight.h; sourceTree = "<group>"; };
 		27B5E2061E543DED00DD6531 /* ConanAccessRight.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConanAccessRight.m; sourceTree = "<group>"; };
+		27EF322E1E641BF90042ABBF /* FirstVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FirstVC.h; sourceTree = "<group>"; };
+		27EF322F1E641BF90042ABBF /* FirstVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FirstVC.m; sourceTree = "<group>"; };
+		27EF32301E641BF90042ABBF /* SecondVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecondVC.h; sourceTree = "<group>"; };
+		27EF32311E641BF90042ABBF /* SecondVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecondVC.m; sourceTree = "<group>"; };
+		27EF32321E641BF90042ABBF /* ThirdVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ThirdVC.h; sourceTree = "<group>"; };
+		27EF32331E641BF90042ABBF /* ThirdVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ThirdVC.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +140,12 @@
 				27B5E1D61E543DE100DD6531 /* AppDelegate.m */,
 				27B5E1D81E543DE100DD6531 /* ViewController.h */,
 				27B5E1D91E543DE100DD6531 /* ViewController.m */,
+				27EF322E1E641BF90042ABBF /* FirstVC.h */,
+				27EF322F1E641BF90042ABBF /* FirstVC.m */,
+				27EF32301E641BF90042ABBF /* SecondVC.h */,
+				27EF32311E641BF90042ABBF /* SecondVC.m */,
+				27EF32321E641BF90042ABBF /* ThirdVC.h */,
+				27EF32331E641BF90042ABBF /* ThirdVC.m */,
 				271F5D951E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.h */,
 				271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */,
 				27B5E1DB1E543DE100DD6531 /* Main.storyboard */,
@@ -318,9 +333,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27EF32361E641BF90042ABBF /* ThirdVC.m in Sources */,
 				271F5D971E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m in Sources */,
+				27EF32341E641BF90042ABBF /* FirstVC.m in Sources */,
 				27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */,
 				27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */,
+				27EF32351E641BF90042ABBF /* SecondVC.m in Sources */,
 				27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */,
 				27B5E1D41E543DE100DD6531 /* main.m in Sources */,
 			);
