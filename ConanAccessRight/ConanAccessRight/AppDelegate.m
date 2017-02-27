@@ -67,7 +67,7 @@
     
     tabBarController.viewControllers = @[nav1C,nav2C,nav3C]; //需要先绑定viewControllers数据源
     //初始化TabBar数据源
-    NSArray *titles = @[@"未处理",@"已处理",@"管理"];
+    NSArray *titles = @[@"Conan1",@"Conan2",@"Conan3"];
     
     //绑定TabBar数据源
     for (int i = 0; i<tabBarController.tabBar.items.count; i++) {
