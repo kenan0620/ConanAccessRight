@@ -277,7 +277,6 @@
 -(void)desc
 {
 //    智能家居权限ConanAccessRightHomeKit
-//    Siri权限ConanAccessRightSiri
 //    电视供应商权限ConanAccessRightTVProvider
 }
 

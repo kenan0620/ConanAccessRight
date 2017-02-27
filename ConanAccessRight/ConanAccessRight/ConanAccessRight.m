@@ -7,26 +7,17 @@
 //
 
 #import "ConanAccessRight.h"
-@import CoreTelephony;
 
 @interface ConanAccessRight ()<CLLocationManagerDelegate>
+
 @property (strong, nonatomic) CNContactStore *contactStore;
 @property (strong, nonatomic) EKEventStore *eventStore;
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (copy, nonatomic) LocationResult locationBlock;
-
 @property (strong, nonatomic) CMPedometer *stepCounter;
-
 @property (nonatomic, strong) CBCentralManager *cMgr;
-
 @property (nonatomic, strong) CBPeripheral *peripheral;
 
-//@property (strong, nonatomic) UILabel *stepsLabel;
-//@property (strong, nonatomic) UILabel *distanceLabel;
-//@property (strong, nonatomic) UILabel *paceLabel;
-//@property (strong, nonatomic) UILabel *cadenceLabel;
-//@property (strong, nonatomic) UILabel *flightsUpLabel;
-//@property (strong, nonatomic) UILabel *flightsDownLabel;
 @end
 @implementation ConanAccessRight
 + (ConanAccessRight *)sharedInstance
@@ -272,7 +263,6 @@
             result(YES);
 //            NSLog(@"coann--%@",[[NSUserDefaults standardUserDefaults] objectForKey:@"pedometerSteps"]);
         }
-
     }];
 }
 
@@ -291,7 +281,6 @@
             result(NO);
         }
     }];
-
 }
 
 /*

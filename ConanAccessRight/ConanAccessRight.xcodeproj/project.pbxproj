@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		271F5D911E600BCF00F2B992 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F5D901E600BCF00F2B992 /* HealthKit.framework */; };
 		271F5D971E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */; };
-		271F5D9A1E601DDF00F2B992 /* SecViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 271F5D991E601DDF00F2B992 /* SecViewController.m */; };
 		271F5D9C1E6025D800F2B992 /* HomeKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 271F5D9B1E6025D800F2B992 /* HomeKit.framework */; };
 		27B5E1D41E543DE100DD6531 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D31E543DE100DD6531 /* main.m */; };
 		27B5E1D71E543DE100DD6531 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27B5E1D61E543DE100DD6531 /* AppDelegate.m */; };
@@ -44,8 +43,6 @@
 		271F5D901E600BCF00F2B992 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		271F5D951E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "HKHealthStore+AAPLExtensions.h"; sourceTree = "<group>"; };
 		271F5D961E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "HKHealthStore+AAPLExtensions.m"; sourceTree = "<group>"; };
-		271F5D981E601DDF00F2B992 /* SecViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SecViewController.h; sourceTree = "<group>"; };
-		271F5D991E601DDF00F2B992 /* SecViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SecViewController.m; sourceTree = "<group>"; };
 		271F5D9B1E6025D800F2B992 /* HomeKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HomeKit.framework; path = System/Library/Frameworks/HomeKit.framework; sourceTree = SDKROOT; };
 		27B5E1CF1E543DE100DD6531 /* ConanAccessRight.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConanAccessRight.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27B5E1D31E543DE100DD6531 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -132,8 +129,6 @@
 				27B5E2061E543DED00DD6531 /* ConanAccessRight.m */,
 				27B5E1D51E543DE100DD6531 /* AppDelegate.h */,
 				27B5E1D61E543DE100DD6531 /* AppDelegate.m */,
-				271F5D981E601DDF00F2B992 /* SecViewController.h */,
-				271F5D991E601DDF00F2B992 /* SecViewController.m */,
 				27B5E1D81E543DE100DD6531 /* ViewController.h */,
 				27B5E1D91E543DE100DD6531 /* ViewController.m */,
 				271F5D951E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.h */,
@@ -323,7 +318,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271F5D9A1E601DDF00F2B992 /* SecViewController.m in Sources */,
 				271F5D971E6012DD00F2B992 /* HKHealthStore+AAPLExtensions.m in Sources */,
 				27B5E2071E543DED00DD6531 /* ConanAccessRight.m in Sources */,
 				27B5E1DA1E543DE100DD6531 /* ViewController.m in Sources */,

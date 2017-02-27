@@ -7,23 +7,19 @@
 //
 
 #import <Foundation/Foundation.h>
+@import CoreLocation;//定位
+@import AVFoundation;//视频
+@import Photos;//相册
+@import Contacts;//通讯录
+@import AddressBook;//通讯录
+@import EventKit;//备忘录(提醒事项)权限、日历权限
+@import MediaPlayer;//媒体库权限
+@import CoreMotion;//运动与健身权限
+@import CoreBluetooth;//蓝牙
+@import Speech;//语音转文字权限
+@import Intents;//Siri权限
+@import CoreTelephony;//联网权限
 
-
-@import CoreLocation;
-@import AVFoundation;
-
-@import Photos;
-@import Contacts;
-@import AddressBook;
-
-@import EventKit;
-
-@import MediaPlayer;
-@import CoreMotion;
-@import CoreBluetooth;
-
-@import Speech;
-@import Intents;
 typedef NS_ENUM(NSInteger, LocationAuthorizedType) {
     LocationAuthorizedAlways,
     LocationAuthorizedWhenInUse
@@ -129,4 +125,5 @@ typedef void (^LocationResult) (BOOL Authorize, CLLocation *location);
  *1、联网权限
  */
 -(void)ConanAccessRightCTCellularDataRestrictedState:(void (^)(BOOL Authorize))result;
+
 @end

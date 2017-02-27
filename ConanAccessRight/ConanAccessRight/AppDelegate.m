@@ -9,7 +9,7 @@
 #import "AppDelegate.h"
 #import<CoreLocation/CoreLocation.h>
 #import "ViewController.h"
-#import "SecViewController.h"
+
 @import HealthKit;
 @interface AppDelegate ()
 @property(nonatomic,strong)CLLocationManager*manager;
@@ -24,30 +24,20 @@
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     // Override point for customization after application launch.
     _manager.pausesLocationUpdatesAutomatically=NO;//该模式是抵抗ios在后台杀死程序
+    
     self.healthStore = [[HKHealthStore alloc] init];
     
-    SecViewController *vc= [[ SecViewController alloc]init];
+    ViewController *vc= [[ ViewController alloc]init];
     
 //     [vc setHealthStore:self.healthStore];
     UINavigationController *na=[[ UINavigationController alloc]initWithRootViewController:vc];
     self.window.rootViewController = na;
     [self.window makeKeyAndVisible];
-    
-    
-        
+//    [self setUpHealthStoreForTabBarControllers];
     
     return YES;
 }
 
-- (void)homeManagerDidUpdateHomes:(HMHomeManager *)manager {
-    // Send a notification to the other objects
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdateHomesNotification" object:self];
-}
-
-- (void)homeManagerDidUpdatePrimaryHome:(HMHomeManager *)manager {
-    // Send a notification to the other objects
-    [[NSNotificationCenter defaultCenter] postNotificationName:@"UpdatePrimaryHomeNotification" object:self];
-}
 #pragma mark - Convenience
 
 // Set the healthStore property on each view controller that will be presented to the user. The root view controller is a tab
@@ -76,25 +66,18 @@
 - (void)applicationDidEnterBackground:(UIApplication *)application {
     // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
     // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
+    /*后台应用刷新*/
     if([CLLocationManager  significantLocationChangeMonitoringAvailable])
         
     {
-        
         [_manager stopUpdatingLocation];
         
         [_manager startMonitoringSignificantLocationChanges];
-        
     }
-    
     else
-        
     {
-        
         NSLog(@"Significant location change monitoring is not available.");
-        
     }
-    
-
 }
 
 
@@ -105,25 +88,16 @@
 
 - (void)applicationDidBecomeActive:(UIApplication *)application {
     // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+    /*后台应用刷新*/
     if([CLLocationManager  significantLocationChangeMonitoringAvailable])
-        
     {
-        
         [_manager stopMonitoringSignificantLocationChanges];
-        
         [_manager startUpdatingLocation];
-        
     }
-    
     else
-        
     {
-        
         NSLog(@"Significant location change monitoring is not available.");
-        
     }
-    
-
 }
 
 

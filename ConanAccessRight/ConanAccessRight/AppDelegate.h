@@ -7,11 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-@import HomeKit;
-@interface AppDelegate : UIResponder <UIApplicationDelegate,HMHomeManagerDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
-@property (strong, nonatomic) HMHomeManager *homeManager;
 
 @end
 
