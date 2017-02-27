@@ -27,7 +27,7 @@
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
     
-    self.title=@"AAPLProfileViewController";
+//    self.title=@"AAPLProfileViewController";
     // Set up an HKHealthStore, asking the user for read/write permissions. The profile view controller is the
     // first view controller that's shown to the user, so we'll ask for all of the desired HealthKit permissions now.
     // In your own app, you should consider requesting permissions the first time a user wants to interact with

@@ -23,6 +23,7 @@
 @import CoreBluetooth;
 
 @import Speech;
+@import Intents;
 typedef NS_ENUM(NSInteger, LocationAuthorizedType) {
     LocationAuthorizedAlways,
     LocationAuthorizedWhenInUse

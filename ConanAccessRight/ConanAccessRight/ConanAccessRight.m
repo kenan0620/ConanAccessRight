@@ -321,7 +321,24 @@
  */
 -(void)ConanAccessRightSiri:(void (^)(BOOL Authorize))result
 {
+    INSiriAuthorizationStatus SiriStatu = [INPreferences siriAuthorizationStatus];
     
+    if (SiriStatu == INSiriAuthorizationStatusNotDetermined) {
+        [INPreferences requestSiriAuthorization:^(INSiriAuthorizationStatus status){
+            if(status == INSiriAuthorizationStatusAuthorized)
+            {
+                result(YES);
+            }else
+            {
+                result(NO);
+            }
+        }];
+    } else if(SiriStatu ==INSiriAuthorizationStatusAuthorized){
+        result(YES);
+    }else
+    {
+        result(NO);
+    }
 }
 
 /*

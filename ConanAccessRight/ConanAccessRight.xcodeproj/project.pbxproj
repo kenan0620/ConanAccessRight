@@ -252,6 +252,9 @@
 							com.apple.HomeKit = {
 								enabled = 1;
 							};
+							com.apple.Siri = {
+								enabled = 1;
+							};
 						};
 					};
 					27B5E1E71E543DE100DD6531 = {

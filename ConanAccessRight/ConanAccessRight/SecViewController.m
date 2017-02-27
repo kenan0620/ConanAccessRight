@@ -11,6 +11,8 @@
 #import <Speech/Speech.h>
 @import HomeKit;
 @import SafariServices;
+
+
 @interface SecViewController ()<SFSpeechRecognitionTaskDelegate>
 
 
@@ -30,9 +32,7 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-   
-    
-    [[ConanAccessRight sharedInstance] ConanAccessRightSpeechRecognition:^(BOOL Authorize) {
+    [[ConanAccessRight sharedInstance] ConanAccessRightSiri:^(BOOL Authorize) {
         if (Authorize)
         {
             NSLog(@"已经授权");
